@@ -91,7 +91,7 @@
 						<div class="col-md-6">
 							Start Date:
 							<p class="input-group">
-								<input type="text" class="form-control" datepicker-popup ng-model="userSalesCtrl.startDate" ng-required="true" close-text="Close"
+								<input type="text" show-button-bar="false"  class="form-control" datepicker-popup ng-model="userSalesCtrl.startDate" ng-required="true" close-text="Close"
 								is-open="userSalesCtrl.openedStart" max-date="userSalesCtrl.endDate" ng-change="userSalesCtrl.getSales()"/>
 								<span class="input-group-btn">
                 					<button type="button" class="btn btn-default" ng-click="userSalesCtrl.openCalendar($event,'startDate')"><i class="glyphicon glyphicon-calendar"></i></button>
@@ -101,7 +101,7 @@
 						<div class="col-md-6">
 							End Date:
 							<p class="input-group">
-								<input type="text" class="form-control" datepicker-popup ng-model="userSalesCtrl.endDate" ng-required="true" close-text="Close"
+								<input type="text" show-button-bar="false"  class="form-control" datepicker-popup ng-model="userSalesCtrl.endDate" ng-required="true" close-text="Close"
 								is-open="userSalesCtrl.openedEnd" min-date='userSalesCtrl.startDate' ng-change="userSalesCtrl.getSales()"/>
 								<span class="input-group-btn">
                 					<button type="button" class="btn btn-default" ng-click="userSalesCtrl.openCalendar($event,'endDate')"><i class="glyphicon glyphicon-calendar"></i></button>
