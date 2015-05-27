@@ -1,24 +1,35 @@
-Quiz application for Pitney Bows company
+Competion application for Pitney Bows company
 =========================
-First to Edit:
+Steps to run the application
 --------------
-*First step:
-On your local instance of MySQL execute sql file named "InitialData.sql".
-This file is located in maciej/src/main/resource/SQL/.
+*The first step:
+To start you have to download the project. To do so click on the button 
+named 'Download ZIP'.
 
-*Second step:
-Edit file spring.xml in maciej/src/main/resource. In bean with id "dataSource",
-There are one property to change, named "password". You must change value to your
-root password.
-Do the same thing in file:
-maciej/src/webapp/WEB-INF/security-config.xml
+*The second step:
+To run application propertly, you must have database. To do so you have to open 
+your 'Workbench MySQL' and execute SQL file name 'InitialData.sql'. This file
+is located in 'maciej/src/main/resoutces/SQL'.
+
+*The third step:
+Application used conection to database. To do this, aplication contains few 
+configuration files. To run apllication you have to edit two files spring.xml
+and security-config.xml. In the first file there is a bean with id 'dataSource'.
+There are two properties to change, named 'password' and 'username'. You have to
+do the same for the second file. 
+The first file is located in 'maciej/src/main/resource' and second 
+in 'maciej/src/webapp/WEB-INF'
+
+*The last step:
+After everything is done correctly just run the application and have fun :)
 
 About project:
 --------------
-To do this quiz, I has been used "Maven-project" and I added to dependency's all file used
-in Spring-MVC. On the User Interface, I used bootstrap to have responsive layout.
-In the background every controller return data in JSON format. On the UI I used AngularJS
-with UI Boostrap. To get data from Database, I used ORM, Hibernate.
+To make this competition application I used 'Maven-project'. In file 'pom.xml'
+I added dependencies to all 'spring MVC' libraries. On the User Interface, I used
+bootstrap to have responsive layout. In the background almost every controller 
+return data in JSON format. On the UI, I used AngularJS with UI Bootstrap. 
+To get data from database, I used ORM, Hibernate
 
 Author:
 ------
